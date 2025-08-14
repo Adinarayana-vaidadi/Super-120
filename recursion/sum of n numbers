@@ -1,0 +1,5 @@
+def sumofN(n):
+    if n==1: return 1 
+    return n+sumofN(n-1) 
+a=sumofN(5)
+print(a)
