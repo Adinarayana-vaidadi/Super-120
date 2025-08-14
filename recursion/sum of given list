@@ -1,0 +1,7 @@
+def sum_of_Given_List(n,nums,index):
+    if index==n:
+        return nums[index]
+    return nums[index]+sum_of_Given_List(n,nums,index+1)
+nums=[2,4,3,5,3]
+res=sum_of_Given_List(len(nums)-1,nums,0)  
+print(res)  
